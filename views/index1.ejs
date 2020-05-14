@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+    <title>Nexmo</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Send Sms Message</h2>
+        <input type="tel" name="number" id="number" placeholder="Enter phone number"/>
+        <input type="msg" name="msg" id="msg" placeholder="Enter Message"/>
+        <input type="button" value="Send Text" class="btn btn-primary" id="send"/>
+        <div class="response"></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
